@@ -56,6 +56,7 @@ while True:
             outro_saque = int(input("   NÃO - Digite 1\n"))       
 
     elif opcao == 3:
+        print("============EXTRATO============\n")
         if saque == 0 and Deposito == 0:
             print("Não foram realizadas movimentações.")
         else:
@@ -69,7 +70,7 @@ while True:
             if saque_3 > 0:           
                 print(f"R${float(saque_3):.2f}\n")
 
-            print("E os valores dos depósitos foram:\n") 
+            print("O valor dos depósitos foi:\n") 
             print(Deposito)
             print(" ")
             
@@ -78,10 +79,11 @@ while True:
             print(" ")
 
     elif opcao == 4:
-        print("O limite de saques é de 3 vezes ao dia")
-        print("Nenhum saque pode ultrapassar os R$500.00")
-        print("Não se pode depositar ou sacar R$0.00 ou valores negativos")
-        print("Lembre-se de sempre sair do sistema quando terminar as operações\n")
+        print("O limite de saques é de 3 vezes ao dia.")
+        print("Nenhum saque pode ultrapassar os R$500.00.")
+        print("Não se pode depositar ou sacar R$0.00 ou valores negativos.")
+        print("Você não pode sacar um valor maior do que seu saldo.")
+        print("Lembre-se de sempre sair do sistema quando terminar as operações.\n")
 
     else:
         print("Obrigado por usar nosso serviço!!!")
